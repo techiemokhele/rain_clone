@@ -10,7 +10,7 @@ const CustomButtonComponent = ({
     <div
       className={`flex w-full justify-center items-center rounded-full ${
         outline
-          ? "border border-blue-600 bg-transparent text-blue-600 p-2 px-6"
+          ? "border font-[500] border-blue-600 bg-transparent text-blue-600 p-2 px-6"
           : !normal
           ? "bg-white p-1"
           : "bg-blue-600 p-2 px-6"

@@ -1,20 +1,33 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { FaCartPlus } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { FaCartPlus } from "react-icons/fa";
+
 import SidebarComponent from "./SidebarComponent";
-import Image from "next/image";
 
 const NavigationComponent = () => {
   const router = useRouter();
   const pathname = usePathname();
   const [showSidebar, setShowSidebar] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     setShowSidebar(false);
   }, [pathname]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const navItems = [
     { name: "home", path: "/" },
@@ -26,7 +39,11 @@ const NavigationComponent = () => {
 
   return (
     <>
-      <nav className="flex justify-between items-center px-4 py-3">
+      <nav
+        className={`sticky top-0 z-50 flex justify-between items-center px-4 py-3 bg-white transition-shadow ${
+          isScrolled ? "shadow-lg" : ""
+        }`}
+      >
         {/* Sidebar & Logo */}
         <div className="flex items-center">
           <button onClick={() => setShowSidebar(true)}>
@@ -41,7 +58,7 @@ const NavigationComponent = () => {
               width={40}
               height={25}
               onClick={() => router.push("/")}
-              className="hidden sm:inline cursor-pointer ml-3 "
+              className="hidden sm:inline cursor-pointer ml-3"
             />
           </div>
 
@@ -96,18 +113,17 @@ const NavigationComponent = () => {
               </span>
             </Link>
 
-            <span className="mx-2 text-gray-400">|</span>
+            <span className="mr-2 text-gray-400">|</span>
             <Link href="/cart" passHref>
               <span
                 className={`cursor-pointer flex-row flex items-center text-[12px] font-[500] ${
                   pathname === "/cart" ? "text-blue-600" : "text-gray-400"
                 } hover:text-blue-600`}
               >
-                <FaCartPlus className="w-4 h-4 mr-1" />
                 Cart
+                <FaCartPlus className="w-4 h-4 ml-2" />
               </span>
             </Link>
-            <span className="ml-1 text-[12px] text-gray-400">5</span>
           </div>
         </div>
       </nav>
