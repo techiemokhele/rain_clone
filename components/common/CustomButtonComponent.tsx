@@ -10,16 +10,16 @@ const CustomButtonComponent = ({
     <div
       className={`flex w-full justify-center items-center rounded-full ${
         outline
-          ? "border border-blue-600 bg-transparent p-3"
-          : normal
+          ? "border border-blue-600 bg-transparent text-blue-600 p-2 px-6"
+          : !normal
           ? "bg-white p-1"
-          : "bg-blue-600 p-3"
+          : "bg-blue-600 p-2 px-6"
       }`}
       onClick={onClick}
     >
       <p
         className={`text-white cursor-pointer ${
-          normal ? "text-blue-700 text-[10px]" : "text-[12px]"
+          !normal ? "text-blue-700 text-[10px]" : "text-[12px]"
         }`}
       >
         {text}

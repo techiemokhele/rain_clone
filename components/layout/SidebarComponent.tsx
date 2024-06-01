@@ -40,7 +40,7 @@ const SidebarComponent = ({ onClose }: { onClose: () => void }) => {
             text="Sign in"
             onClick={() => handleNavigation("/")}
             outline={false}
-            normal={true}
+            normal={false}
           />
         </div>
       </div>
