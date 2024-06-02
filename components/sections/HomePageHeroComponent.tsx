@@ -6,7 +6,7 @@ const HomePageHeroComponent = () => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center lg:px-32 px-10">
+    <section className="flex flex-col sm:flex-row items-center justify-center lg:px-32 px-10">
       {/* Image column (visible on desktop and tablet) */}
       <div className="w-full sm:w-1/2 px-4 mb-4 sm:mb-0">
         {/* Mobile View */}
@@ -63,7 +63,7 @@ const HomePageHeroComponent = () => {
           Ts & Cs apply.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
