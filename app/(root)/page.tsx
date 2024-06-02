@@ -16,9 +16,7 @@ const HomePage = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="flex justify-center items-center">
-        <CallToActionComponent />
-      </div>
+      <CallToActionComponent />
     </div>
   );
 };

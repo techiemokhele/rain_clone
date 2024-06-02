@@ -7,7 +7,7 @@ const CallToActionComponent = () => {
   const router = useRouter();
 
   return (
-    <div className="absolute bottom-10 px-4 py-2 bg-white rounded-full shadow-xl">
+    <div className="fixed self-center bottom-10 px-4 py-2 bg-white rounded-full shadow-xl">
       <div className="flex flex-row justify-between items-center">
         {/* Text section */}
         <div className="hidden sm:flex items-center mr-6">
