@@ -77,10 +77,10 @@ const RainGoComponent = () => {
             alt="RainOne Logo"
             width={200}
             height={100}
-            className="w-56 lg:w-72 h-auto"
+            className=" w-72 lg:w-72 h-auto"
           />
 
-          <p className="text-white text-[30px] leading-7 mt-8 lg:top-28">
+          <p className="text-white text-[34px] lg:text-[30px] leading-10 mt-7 lg:top-28">
             GeForce NOW <br />
             <span className="font-bold">powered by rain</span>
           </p>

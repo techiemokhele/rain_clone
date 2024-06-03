@@ -3,6 +3,7 @@ import HomePageHeroComponent from "@/components/sections/HomePageHeroComponent";
 import HomeSliderComponent from "@/components/sections/HomeSliderComponent";
 import MobileSimCardComponent from "@/components/sections/MobileSimCardComponent";
 import RainGoComponent from "@/components/sections/RainGoComponent";
+import SimDealComponent from "@/components/sections/SimDealComponent";
 
 const HomePage = () => {
   return (
@@ -17,13 +18,18 @@ const HomePage = () => {
         <HomeSliderComponent />
       </div>
 
+      {/* Sim Deal Section */}
+      <div className="my-[60px] lg:mt-[90px]">
+        <SimDealComponent />
+      </div>
+
       {/* Mobile Sim Deal Section */}
-      <div className="mt-4">
+      <div className="mt-4 lg:mt-6">
         <MobileSimCardComponent />
       </div>
 
       {/* Rain Go Section */}
-      <div className="mt-4">
+      <div className="mt-4 lg:mt-6">
         <RainGoComponent />
       </div>
 
