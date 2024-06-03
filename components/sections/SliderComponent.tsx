@@ -5,8 +5,20 @@ import Image from "next/image";
 
 import homeSliderImageData from "../assets/homeSliderImageData.json";
 import homeSliderMobileImageData from "../assets/homeSliderMobileImageData.json";
+import {
+  workDesktopSliderImageData,
+  workMobileSliderImageData,
+} from "../assets/workSliderData";
 
-const HomeSliderComponent = () => {
+interface SliderComponentProps {
+  isHomePage: boolean;
+  isWorkPage?: boolean; // Optional prop for work page
+}
+
+const SliderComponent = ({
+  isHomePage,
+  isWorkPage = false,
+}: SliderComponentProps) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -20,7 +32,16 @@ const HomeSliderComponent = () => {
     return () => window.removeEventListener("resize", updateIsMobile);
   }, []);
 
-  const slides = isMobile ? homeSliderMobileImageData : homeSliderImageData;
+  const getSlides = () => {
+    if (isHomePage) {
+      return isMobile ? homeSliderMobileImageData : homeSliderImageData;
+    } else if (isWorkPage) {
+      return isMobile ? workMobileSliderImageData : workDesktopSliderImageData;
+    }
+    return [];
+  };
+
+  const slides = getSlides();
   const totalSlides = slides.length;
 
   useEffect(() => {
@@ -79,4 +100,4 @@ const HomeSliderComponent = () => {
   );
 };
 
-export default HomeSliderComponent;
+export default SliderComponent;
