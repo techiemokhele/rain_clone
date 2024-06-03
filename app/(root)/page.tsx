@@ -1,23 +1,29 @@
 import CallToActionComponent from "@/components/common/CallToActionComponent";
 import HomePageHeroComponent from "@/components/sections/HomePageHeroComponent";
 import HomeSliderComponent from "@/components/sections/HomeSliderComponent";
+import MobileSimCardComponent from "@/components/sections/MobileSimCardComponent";
 import RainGoComponent from "@/components/sections/RainGoComponent";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col h-auto w-full pb-24">
+    <div className=" container mx-auto flex flex-col h-auto w-full pb-24">
       {/* Hero Section */}
-      <div className="container mx-auto flex justify-center items-center lg:py-16 py-14">
+      <div className=" mt-[120px] lg:mt-[122px]">
         <HomePageHeroComponent />
       </div>
 
       {/* Slider Section */}
-      <div className="container mx-auto flex justify-center items-center mt-6">
+      <div className=" mt-28 lg:mt-32">
         <HomeSliderComponent />
       </div>
 
+      {/* Mobile Sim Deal Section */}
+      <div className="mt-4">
+        <MobileSimCardComponent />
+      </div>
+
       {/* Rain Go Section */}
-      <div className="container mx-auto flex justify-center items-center">
+      <div className="mt-4">
         <RainGoComponent />
       </div>
 

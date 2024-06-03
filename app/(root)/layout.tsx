@@ -3,15 +3,11 @@ import "../globals.css";
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <main className="flex h-screen w-full font-inter">
-      <div className="flex size-full flex-col">
-        <NavigationComponent />
-        {children}
-      </div>
+    <main className="flex flex-col h-screen w-full font-inter">
+      <NavigationComponent />
+      <div className="flex-grow">{children}</div>
     </main>
   );
 }

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "image": "/images/products/slider/banner-6.jpg"
+  },
+  {
+    "id": 2,
+    "image": "/images/products/slider/banner-7.jpg"
+  },
+  {
+    "id": 3,
+    "image": "/images/products/slider/banner-8.jpg"
+  },
+  {
+    "id": 4,
+    "image": "/images/products/slider/banner-9.jpg"
+  },
+  {
+    "id": 5,
+    "image": "/images/products/slider/banner-10.jpg"
+  }
+]

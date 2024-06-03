@@ -7,11 +7,11 @@ const CallToActionComponent = () => {
   const router = useRouter();
 
   return (
-    <div className="fixed self-center bottom-10 px-4 py-2 bg-white rounded-full shadow-xl">
+    <div className="fixed self-center bottom-14 px-4 py-2 bg-white rounded-full shadow-xl">
       <div className="flex flex-row justify-between items-center">
         {/* Text section */}
         <div className="hidden sm:flex items-center mr-6">
-          <p className="text-blue-600 text-[14px]">
+          <p className="text-blue-600 text-[16px]">
             rain<span className="font-semibold">one</span> for{" "}
             <span className="font-semibold">home</span> &{" "}
             <span className="font-semibold">phones</span>

@@ -25,3 +25,8 @@ p, a, span, div {
   font-family: var(--font-montserrat);
 }
 
+.pipe::before {
+  content: "|";
+  margin: 0 0.3rem; 
+  color: #9CA3AF; 
+}
