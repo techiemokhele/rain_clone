@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className=" container mx-auto flex flex-col h-auto w-full pb-24">
       {/* Hero Section */}
-      <div className=" mt-[120px] lg:mt-[122px]">
+      <div className=" mt-[115px] lg:mt-[122px]">
         <HomePageHeroComponent />
       </div>
 
