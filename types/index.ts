@@ -4,3 +4,9 @@ export interface CustomButtonProps {
     outline?: boolean;
     normal?: boolean;
 }
+
+export interface RouterImageData {
+    id: number;
+    mainImage: string;
+    thumbnailImage: string;
+}

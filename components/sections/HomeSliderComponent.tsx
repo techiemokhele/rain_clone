@@ -62,11 +62,11 @@ const HomeSliderComponent = () => {
       </div>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-[14px]">
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`w-[19px] h-[19px] rounded-full ${
+            className={`w-[18px] h-[18px] rounded-full ${
               index === currentSlide
                 ? "bg-blue-600 border border-white"
                 : "bg-white border-t-2 border-gray-200"

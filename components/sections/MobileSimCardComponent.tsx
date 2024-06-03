@@ -9,7 +9,7 @@ const MobileSimCardComponent = () => {
   return (
     <section className="flex flex-col md:flex-row justify-between items-center mx-2 px-6 py-[10px] rounded-3xl bg-gray-100">
       {/* Text section for mobile */}
-      <div className="md:w-1/2 w-full py-1">
+      <div className="md:w-1/2 w-full py-3 lg:py-1">
         <p className=" w-[350px] lg:w-full text-[24px] lg:text-[40px] text-blue-600">
           you get <span className="font-bold">FREE</span> calls & data every
           month
