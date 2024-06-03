@@ -24,6 +24,14 @@ export interface RouterOptionProps {
     adTwoImage: string;
 }
 
+export interface MobileSimProps {
+    isWork: boolean;
+    startingText: string;
+    endingText: string;
+    simCount: number;
+    image: string;
+}
+
 export interface RouterImageData {
     id: number;
     mainImage: string;

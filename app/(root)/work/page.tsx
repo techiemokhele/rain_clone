@@ -1,4 +1,5 @@
 import CallToActionComponent from "@/components/common/CallToActionComponent";
+import MobileSimCardComponent from "@/components/sections/MobileSimCardComponent";
 import RouterOptionComponent from "@/components/sections/RouterOptionComponent";
 import SimDealComponent from "@/components/sections/SimDealComponent";
 import SliderComponent from "@/components/sections/SliderComponent";
@@ -28,6 +29,17 @@ const WorkPage = () => {
         <RouterOptionComponent
           adOneImage="/images/products/lifestyle_01_Work.jpg"
           adTwoImage="/images/products/lifestyle_02_Work.jpg"
+        />
+      </div>
+
+      {/* Mobile Sim Deal Section */}
+      <div className="mt-4 lg:mt-6">
+        <MobileSimCardComponent
+          isWork={true}
+          startingText="keep collaborating"
+          endingText="calls & data for 5 phones"
+          simCount={5}
+          image="/images/products/4g-mobile-sim.png"
         />
       </div>
 

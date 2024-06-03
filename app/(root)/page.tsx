@@ -41,7 +41,13 @@ const HomePage = () => {
 
       {/* Mobile Sim Deal Section */}
       <div className="mt-4 lg:mt-6">
-        <MobileSimCardComponent />
+        <MobileSimCardComponent
+          isWork={false}
+          startingText="you get"
+          endingText="calls & data every month"
+          simCount={2}
+          image="/images/products/4g-mobile-sim2.png"
+        />
       </div>
 
       {/* Rain Go Section */}
