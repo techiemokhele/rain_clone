@@ -6,10 +6,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #2563eb #ebf8ff;
 }
 
 :root {
   --font-montserrat: 'Montserrat', sans-serif;
+}
+
+/* For Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #ebf8ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2563eb; 
+  border-radius: 10px; 
+  border: 3px solid #ebf8ff; 
 }
 
 body {
@@ -23,4 +44,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p, a, span, div {
   font-family: var(--font-montserrat);
+}
+
+.pipe::before {
+  content: "|";
+  margin: 0 0.3rem; 
+  color: #9CA3AF; 
 }

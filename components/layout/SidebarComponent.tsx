@@ -21,37 +21,39 @@ const SidebarComponent = ({ onClose }: { onClose: () => void }) => {
   };
 
   return (
-    <div className="bg-blue-600 fixed rounded-e-md top-0 left-0 h-full w-1/2 z-50 transform transition-transform duration-300 shadow-lg">
+    <div className="bg-blue-600 fixed rounded-e-md top-0 left-0 h-full w-full lg:w-[475px] z-50 transform transition-transform duration-300 shadow-lg">
       {/* Close Section */}
       <div className="flex justify-end p-4">
         <button onClick={onClose}>
-          <FaTimes className="w-6 h-6 text-white" />
+          <FaTimes className=" w-8 h-8 lg:w-6 lg:h-6 text-white" />
         </button>
       </div>
 
-      <div className="flex flex-col px-16">
-        <span className="text-white font-extrabold text-[24px]">Welcome</span>
-        <span className="text-white font-extrabold text-[24px] mb-3">
+      <div className="flex flex-col px-6 lg:px-20">
+        <span className="text-white font-extrabold text-[30px] lg:text-[24px]">
+          Welcome
+        </span>
+        <span className="text-white font-extrabold text-[30px] lg:text-[24px] mb-5 lg:mb-3">
           to rain
         </span>
 
-        <div className="w-28">
+        <div className="w-32">
           <CustomButtonComponent
             text="Sign in"
             onClick={() => handleNavigation("/")}
             outline={false}
-            normal={true}
+            normal={false}
           />
         </div>
       </div>
 
       {/* Link List Section */}
-      <ul className="mt-12 bg-white pt-5 pb-20 px-8">
+      <ul className="mt-[38px] lg:mt-12 h-full bg-white pt-10 lg:pt-5 pb-20 px-3 lg:px-16">
         {navItems.map((item) => (
-          <li key={item.path} className="my-2 px-4">
+          <li key={item.path} className="mt-2 mb-4 px-4">
             <button
               onClick={() => handleNavigation(item.path)}
-              className="text-gray-700 text-[14px] font-[500] hover:text-blue-600"
+              className="text-gray-500 text-[18px] lg:text-[20px] font-[500] hover:text-blue-600"
             >
               {item.name}
             </button>
@@ -62,8 +64,8 @@ const SidebarComponent = ({ onClose }: { onClose: () => void }) => {
           onClick={() => handleNavigation("/")}
           src={"/images/geforce.svg"}
           alt="geforce-image"
-          width={200}
-          height={180}
+          width={330}
+          height={300}
           className="ml-4 mt-5 cursor-pointer"
         />
       </ul>
