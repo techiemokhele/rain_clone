@@ -19,6 +19,11 @@ export interface SliderImageData {
     image: string;
 }
 
+export interface RouterOptionProps {
+    adOneImage: string;
+    adTwoImage: string;
+}
+
 export interface RouterImageData {
     id: number;
     mainImage: string;

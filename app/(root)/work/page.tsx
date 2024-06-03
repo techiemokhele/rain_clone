@@ -1,4 +1,5 @@
 import CallToActionComponent from "@/components/common/CallToActionComponent";
+import RouterOptionComponent from "@/components/sections/RouterOptionComponent";
 import SimDealComponent from "@/components/sections/SimDealComponent";
 import SliderComponent from "@/components/sections/SliderComponent";
 
@@ -19,6 +20,14 @@ const WorkPage = () => {
           type="work"
           simCount={5}
           price={795}
+        />
+      </div>
+
+      {/* Router Option Section */}
+      <div className="mt-[10px] -mb-1 lg:mb-5 lg:mt-[40px]">
+        <RouterOptionComponent
+          adOneImage="/images/products/lifestyle_01_Work.jpg"
+          adTwoImage="/images/products/lifestyle_02_Work.jpg"
         />
       </div>
 

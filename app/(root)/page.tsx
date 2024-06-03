@@ -33,7 +33,10 @@ const HomePage = () => {
 
       {/* Router Option Section */}
       <div className="mt-[10px] -mb-1 lg:mb-5 lg:mt-[40px]">
-        <RouterOptionComponent />
+        <RouterOptionComponent
+          adOneImage="/images/products/lifestyle1.png"
+          adTwoImage="/images/products/lifestyle2.png"
+        />
       </div>
 
       {/* Mobile Sim Deal Section */}
