@@ -21,7 +21,14 @@ const HomePage = () => {
 
       {/* Sim Deal Section */}
       <div className="my-[60px] lg:mt-[90px]">
-        <SimDealComponent />
+        <SimDealComponent
+          isWork={false}
+          logo={"/images/logo/rainOne-logo.svg"}
+          productImage={"/images/products/rainOne-home-stone.png"}
+          type="home"
+          simCount={2}
+          price={595}
+        />
       </div>
 
       {/* Router Option Section */}

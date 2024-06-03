@@ -5,6 +5,15 @@ export interface CustomButtonProps {
     normal?: boolean;
 }
 
+export interface SimDealProps {
+    isWork: boolean;
+    logo: string;
+    productImage: string;
+    type: string;
+    simCount: number;
+    price: number;
+}
+
 export interface SliderImageData {
     id: number;
     image: string;

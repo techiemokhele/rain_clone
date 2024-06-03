@@ -1,4 +1,5 @@
 import CallToActionComponent from "@/components/common/CallToActionComponent";
+import SimDealComponent from "@/components/sections/SimDealComponent";
 import SliderComponent from "@/components/sections/SliderComponent";
 
 const WorkPage = () => {
@@ -7,6 +8,18 @@ const WorkPage = () => {
       {/* Slider Section */}
       <div className="mt-20 lg:mt-32">
         <SliderComponent isHomePage={false} isWorkPage={true} />
+      </div>
+
+      {/* Sim Deal Section */}
+      <div className="mb-[60px] mt-[40px] lg:mt-[90px]">
+        <SimDealComponent
+          isWork={true}
+          logo={"/images/logo/rainOne-work-logo.svg"}
+          productImage={"/images/products/rainOne-work-silver.png"}
+          type="work"
+          simCount={5}
+          price={795}
+        />
       </div>
 
       {/* CTA Section */}
