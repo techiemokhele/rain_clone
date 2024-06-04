@@ -9,7 +9,7 @@ const MyRainBannerComponent = () => {
   const router = useRouter();
 
   return (
-    <>
+    <section>
       <div className="w-full flex flex-col lg:flex-row mt-6 px-4">
         {/* Logo Section */}
         <div className="flex w-full lg:w-1/3 justify-center items-center">
@@ -45,8 +45,8 @@ const MyRainBannerComponent = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[49px] border border-b-[1px] border-gray-300"></div>
-    </>
+      <div className="mt-[49px] mx-4 lg:mx-0 border border-b-[1px] border-gray-300"></div>
+    </section>
   );
 };
 
