@@ -3,6 +3,7 @@ export interface CustomButtonProps {
     onClick: () => void;
     outline?: boolean;
     normal?: boolean;
+    hover?: boolean;
 }
 
 export interface SimDealProps {
