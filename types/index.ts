@@ -32,6 +32,13 @@ export interface MobileSimProps {
     image: string;
 }
 
+export interface RainGoProps {
+    isWork: boolean;
+    text: string;
+    endingText: string;
+    image: string;
+}
+
 export interface RouterImageData {
     id: number;
     mainImage: string;

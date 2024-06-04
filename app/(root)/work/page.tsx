@@ -1,5 +1,6 @@
 import CallToActionComponent from "@/components/common/CallToActionComponent";
 import MobileSimCardComponent from "@/components/sections/MobileSimCardComponent";
+import RainGoDesktopComponent from "@/components/sections/RainGoDesktopComponent";
 import RouterOptionComponent from "@/components/sections/RouterOptionComponent";
 import SimDealComponent from "@/components/sections/SimDealComponent";
 import SliderComponent from "@/components/sections/SliderComponent";
@@ -41,6 +42,11 @@ const WorkPage = () => {
           simCount={5}
           image="/images/products/4g-mobile-sim.png"
         />
+      </div>
+
+      {/* Rain Go Section */}
+      <div className="mt-[10px] lg:mt-6">
+        <RainGoDesktopComponent />
       </div>
 
       {/* CTA Section */}
