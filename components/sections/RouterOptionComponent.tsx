@@ -2,14 +2,17 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { RouterImageData } from "../../types";
+import { RouterImageData, RouterOptionProps } from "../../types";
 
 import {
   artCollectionRouterData,
   rainCollectionRouterData,
 } from "../assets/routerOptionData";
 
-const RouterOptionComponent = () => {
+const RouterOptionComponent = ({
+  adOneImage,
+  adTwoImage,
+}: RouterOptionProps) => {
   const [selectArt, setSelectArt] = useState<boolean>(true);
   const [selectRain, setSelectRain] = useState<boolean>(false);
   const [selectedMainImage, setSelectedMainImage] = useState<string>(
@@ -127,7 +130,7 @@ const RouterOptionComponent = () => {
       <div className="w-full md:w-1/3 px-2 flex flex-col space-y-3">
         <div className="w-full h-[211px] lg:h-[250px]">
           <Image
-            src="/images/products/lifestyle1.png"
+            src={adOneImage}
             alt="Image"
             width={1000}
             height={1000}
@@ -137,7 +140,7 @@ const RouterOptionComponent = () => {
 
         <div className="w-full h-[213px] lg:h-[250px]">
           <Image
-            src="/images/products/lifestyle2.png"
+            src={adTwoImage}
             alt="Image"
             width={1000}
             height={1000}

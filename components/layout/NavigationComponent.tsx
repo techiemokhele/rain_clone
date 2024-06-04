@@ -44,7 +44,10 @@ const NavigationComponent = () => {
         }`}
       >
         <div className="flex items-center">
-          <button onClick={() => setShowSidebar(true)}>
+          <button
+            onClick={() => setShowSidebar(true)}
+            className="ml-0 lg:ml-16"
+          >
             <img src="/icons/hamburger.svg" alt="Menu" className="w-7 h-7" />
           </button>
 
@@ -81,7 +84,7 @@ const NavigationComponent = () => {
           </div>
         </div>
 
-        <div className="flex items-center">
+        <div className="flex items-center  mr-0 lg:mr-4">
           <div className="hidden sm:flex">
             {navItems.map((item, index) => (
               <Link key={item.path} href={item.path} passHref>

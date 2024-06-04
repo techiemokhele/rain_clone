@@ -1,6 +1,6 @@
 import CallToActionComponent from "@/components/common/CallToActionComponent";
 import HomePageHeroComponent from "@/components/sections/HomePageHeroComponent";
-import HomeSliderComponent from "@/components/sections/HomeSliderComponent";
+import SliderComponent from "@/components/sections/SliderComponent";
 import MobileSimCardComponent from "@/components/sections/MobileSimCardComponent";
 import RainGoComponent from "@/components/sections/RainGoComponent";
 import RouterOptionComponent from "@/components/sections/RouterOptionComponent";
@@ -8,30 +8,46 @@ import SimDealComponent from "@/components/sections/SimDealComponent";
 
 const HomePage = () => {
   return (
-    <div className=" container mx-auto flex flex-col h-auto w-full pb-24">
+    <div className="container mx-auto flex flex-col h-auto w-full pb-24">
       {/* Hero Section */}
-      <div className=" mt-[115px] lg:mt-[122px]">
+      <div className="mt-[115px] lg:mt-[122px]">
         <HomePageHeroComponent />
       </div>
 
       {/* Slider Section */}
-      <div className=" mt-28 lg:mt-32">
-        <HomeSliderComponent />
+      <div className="mt-28 lg:mt-32">
+        <SliderComponent isHomePage={true} />
       </div>
 
       {/* Sim Deal Section */}
       <div className="my-[60px] lg:mt-[90px]">
-        <SimDealComponent />
+        <SimDealComponent
+          isWork={false}
+          logo={"/images/logo/rainOne-logo.svg"}
+          productImage={"/images/products/rainOne-home-stone.png"}
+          type="home"
+          simCount={2}
+          price={595}
+        />
       </div>
 
       {/* Router Option Section */}
       <div className="mt-[10px] -mb-1 lg:mb-5 lg:mt-[40px]">
-        <RouterOptionComponent />
+        <RouterOptionComponent
+          adOneImage="/images/products/lifestyle1.png"
+          adTwoImage="/images/products/lifestyle2.png"
+        />
       </div>
 
       {/* Mobile Sim Deal Section */}
       <div className="mt-4 lg:mt-6">
-        <MobileSimCardComponent />
+        <MobileSimCardComponent
+          isWork={false}
+          startingText="you get"
+          endingText="calls & data every month"
+          simCount={2}
+          image="/images/products/4g-mobile-sim2.png"
+        />
       </div>
 
       {/* Rain Go Section */}
