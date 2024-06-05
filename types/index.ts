@@ -3,6 +3,7 @@ export interface CustomButtonProps {
     onClick: () => void;
     outline?: boolean;
     normal?: boolean;
+    hover?: boolean;
 }
 
 export interface SimDealProps {
@@ -44,3 +45,15 @@ export interface RouterImageData {
     mainImage: string;
     thumbnailImage: string;
 }
+
+export type NestedAnswer = {
+    nested_question: string;
+    nested_info?: string;
+    nested_answers: string[];
+};
+
+export type FAQ = {
+    id: number;
+    question: string;
+    answers: (string | NestedAnswer)[];
+};
