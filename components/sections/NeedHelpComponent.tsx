@@ -15,13 +15,16 @@ const NeedHelpComponent = () => {
           If you still need help, please give us a call.
         </p>
 
-        <div className="flex flex-row justify-center items-center mt-6">
+        <div className="flex flex-row justify-center items-center mt-6 cursor-pointer">
           <div className="p-2 border-[1px] border-blue-600 rounded-full">
             <IoIosCall className="text-blue-600 size-7" />
           </div>
-          <p className="text-3xl text-blue-600 hover:text-blue-800 ml-2">
-            081 610 1000
-          </p>
+          <a
+            href="tel:+0648473363"
+            className="text-3xl text-blue-600 hover:text-blue-800 ml-2"
+          >
+            064 837 3363
+          </a>
         </div>
       </div>
 

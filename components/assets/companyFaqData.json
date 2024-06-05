@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "question": "onboarding",
+    "answers": [
+      {
+        "nested_question": "how do I buy rainone?",
+        "nested_info": "",
+        "nested_answers": [
+          "rainone can be purchased on the website, or you can schedule a sales call to upgrade from your current rain plan to rainone. We'll deliver your order to you within three to five working days once it has been processed. You will be met at the door by our courier CCD. Once that's finished, you can proceed.",
+          "rainone is also available through one of our locations.​"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "RICA",
+    "answers": [
+      {
+        "nested_question": "what do I need to RICA when the courier arrives with my order?",
+        "nested_info": "",
+        "nested_answers": [
+          "A valid South African ID, South African passport, or international passport.",
+          "Proof of address that is less than three months old (e.g., a municipal bill, utility bill, lease agreement, or bank statement) that includes your name, address, and date.​",
+          "Yourself! You'll need to RICA your SIM yourself—no one can do it for you."
+        ]
+      },
+      {
+        "nested_question": "can I RICA in-store?",
+        "nested_info": "Yes, you can. When you opt to pick up your order in store, you will speak with one of our sales representatives. Please make sure you bring the following documents:",
+        "nested_answers": [
+          "A valid South African ID, South African passport, or international passport.",
+          "Proof of address that is less than three months old (e.g., a municipal bill, utility bill, lease agreement, or bank statement) that includes your name, address, and date.​"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "deliveries",
+    "answers": [
+      {
+        "nested_question": "when will my order arrive?",
+        "nested_info": "",
+        "nested_answers": [
+          "Our courier partner typically delivers online orders between 3 to 5 business days. You may track your delivery once you receive your reference number via SMS from the courier.",
+          "If you have not gotten a response within 5 working days, please visit my orders and contact support."
+        ]
+      },
+      {
+        "nested_question": "can I pick up my order in store?",
+        "nested_info": "",
+        "nested_answers": [
+          "Yes, you can. Visit any of our rain stores, and bring your RICA documents with you so that one of our representatives can assist you in effectively completing the RICA process. You'll need a valid South African ID or passport, evidence of address from within the last three months, and yourself!"
+        ]
+      },
+      {
+        "nested_question": "how do I change my delivery address?​",
+        "nested_info": "",
+        "nested_answers": [
+          "For online orders, watch for an SMS from our courier partner. You can use the reference number from your SMS to contact the courier partner directly."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "payment",
+    "answers": [
+      {
+        "nested_question": "my order payment was unsuccessful... what now?",
+        "nested_info": "First, confirm with your bank that the card you're using has 3D Secure (also known as MasterCard SecureCode or Verified by Visa), which implies it's enabled for online transactions. If your card is 3D secure and you are still encountering this issue, please contact your bank for assistance. An unsuccessful transaction is typically the consequence of one of the following factors:",
+        "nested_answers": [
+          "The OTP has not been applied within the required interval.​",
+          "The bank card you're using is from an international bank, which rain cannot process.",
+          "The card is being used or was used under a separate rain account.​",
+          "You've surpassed your online spending limit or have insufficient cash."
+        ]
+      },
+      {
+        "nested_question": "what do I need to RICA when the courier arrives with my order?",
+        "nested_info": "You can update your bank card details on myrain, under ‘my account’.",
+        "nested_answers": []
+      },
+      {
+        "nested_question": "what do I need to RICA when the courier arrives with my order?",
+        "nested_info": "Please keep in mind that once your refund has been approved, it will take 7 to 10 business days for it to appear in your bank account after receiving confirmation. If you have not received your refund after this timeframe, please call us at 064 847 3363.​",
+        "nested_answers": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "network",
+    "answers": [
+      {
+        "nested_question": "how do I check my coverage?",
+        "nested_info": "Enter your address on our coverage map and use the map key in the corner to determine whether you have 4G/5G home coverage. To acquire a rainone plan, you must have 4G/5G home coverage.",
+        "nested_answers": []
+      },
+      {
+        "nested_question": "I’m connected but can’t get onto the internet?​",
+        "nested_info": "This could be due of your APN settings. APN settings are automatically configured on phones and the majority of other devices. If not, the default APN configuration is as follows:APN name: Rain. All other parameters may be left blank.If the issue is not related to your APN settings, consider the following:​​",
+        "nested_answers": [
+          "You're using the wrong device; be sure you use a 4G-enabled device for your 4G mobile SIM or rain's 5G router for your 5G SIM. If you have a 4G for phones device, your SIM card will only operate with a 4G phone.​",
+          "You've reached your GB limit; you can manage it on my rain.​",
+          "​An failed debit order indicates that your rain account may be in overdue. Sign into my rain to pay now and get back online."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "activations",
+    "answers": [
+      {
+        "nested_question": "how long will it take for my SIM to activate?",
+        "nested_info": "Your SIM(s) should be activated within two hours of successfully completing RICA. We'll send you an SMS to notify you when your SIM is operational. You can also go in to your myrain account and search for a green tick next to your SIM.",
+        "nested_answers": []
+      }
+    ]
+  }
+]

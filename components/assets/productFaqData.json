@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "question": "level up 4G mobile phone line",
+    "answers": [
+      {
+        "nested_question": "",
+        "nested_info": "If you require extra gigabytes and minutes each month, you can level up at any moment. The cost of your level upgrade will be added to your monthly payment.",
+        "nested_answers": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "speed up 5G wifi",
+    "answers": [
+      {
+        "nested_question": "",
+        "nested_info": "You can increase your 5G wireless speed at any moment. The cost of increasing your speed level will be applied to your monthly payment.",
+        "nested_answers": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "check my balances",
+    "answers": [
+      {
+        "nested_question": "",
+        "nested_info": "To check your balance, sign into myrain or text 'balance' to 136.",
+        "nested_answers": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "buy more",
+    "answers": [
+      {
+        "nested_question": "",
+        "nested_info": "If you run out of data, minutes, or SMS, you may buy more at any time on rainGo. These 'buy more' purchases are one-time and will never expire. So, everything you don't utilize this month will still be available to you next month.",
+        "nested_answers": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "about my 4G mobile phone line",
+    "answers": [
+      {
+        "nested_question": "can I use voicemail? ​​​",
+        "nested_info": "We do not provide traditional voicemail services, but you will receive SMS notifications for missed calls.​​",
+        "nested_answers": []
+      },
+      {
+        "nested_question": "can I make international calls?​​​​",
+        "nested_info": "Yes, you can. Sign in to your myrain account and enable international calling, examine call prices by country, and purchase more for your wallet. Myrain allows you to purchase additional international calling credit as needed. Your rain dashboard displays the balance of your top-ups, which never expire. ​​​",
+        "nested_answers": []
+      },
+      {
+        "nested_question": "how much am I paying? ​​​",
+        "nested_info": "Check our international call rates to see how much you'll pay for each country. Check the rate card to ensure your desired country and dialing prefix is in the list. Please take note that T&Cs apply.​​",
+        "nested_answers": []
+      },
+      {
+        "nested_question": "can I use hotspot? ​​​",
+        "nested_info": "Yes, you may enable hotspot by going into your smartphone's settings.​​",
+        "nested_answers": []
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "port my number",
+    "answers": [
+      {
+        "nested_question": "",
+        "nested_info": "You can keep your existing phone number by transferring it to your new rain 4G mobile phone SIM. It's quite quick and easy. Simply go to your myrain page and request that your number be migrated.",
+        "nested_answers": []
+      }
+    ]
+  }
+]

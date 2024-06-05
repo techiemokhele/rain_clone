@@ -62,11 +62,12 @@ const ManageAccountComponent = () => {
           <h1 className="text-blue-600 text-[24px] lg:text-[30px] font-bold">
             speed up 5G wifi
           </h1>
+          <p className="w-96 lg:w-full text-gray-600 font-medium mt-[10px]"></p>
         </div>
 
         {/* Image Section */}
         <div className="w-full flex justify-center items-center lg:ml-40 lg:w-1/3 lg:justify-start lg:items-start lg:order-first">
-          <div className="w-60 h-[165px] lg:w-[340px] lg:h-auto pt-[18px]">
+          <div className="w-60 h-[170px] lg:w-[340px] lg:h-auto pt-[10px] lg:pt-[18px]">
             <Image
               src={"/images/myrain/speed-up-block.png"}
               alt="my-account-image"

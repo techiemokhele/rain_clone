@@ -45,3 +45,15 @@ export interface RouterImageData {
     mainImage: string;
     thumbnailImage: string;
 }
+
+export type NestedAnswer = {
+    nested_question: string;
+    nested_info?: string;
+    nested_answers: string[];
+};
+
+export type FAQ = {
+    id: number;
+    question: string;
+    answers: (string | NestedAnswer)[];
+};
