@@ -4,7 +4,7 @@ import { IoCall } from "react-icons/io5";
 
 const SupportOptionComponent = () => {
   return (
-    <section className="flex flex-col lg:flex-row mx-4 lg:mx-0 mt-6 lg:space-x-10">
+    <section className="flex flex-col lg:flex-row mx-4 lg:mx-0 mt-6 lg:space-x-16">
       {/* Account Section */}
       <div className="h-[318px] w-full lg:w-96 flex flex-col justify-center items-center mb-5 py-10 shadow-xl rounded-lg">
         <p className="text-[20px] text-blue-600 font-semibold mb-6">myrain</p>

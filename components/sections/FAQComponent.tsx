@@ -8,7 +8,7 @@ import { FAQ } from "../../types";
 import companyFaqData from "../assets/companyFaqData.json";
 import productFaqData from "../assets/productFaqData.json";
 
-const FAQComponent = () => {
+const FAQComponent = ({ addTitle }: { addTitle: boolean }) => {
   const [expandedQuestionId, setExpandedQuestionId] = useState<number | null>(
     null
   );
@@ -30,12 +30,18 @@ const FAQComponent = () => {
 
   return (
     <div className="container mx-auto flex flex-col px-6">
-      <h1 className="text-blue-600 text-[24px] font-bold">
-        looking for a little more info?
-      </h1>
+      {addTitle && (
+        <h1 className="text-blue-600 text-[24px] font-bold">
+          looking for a little more info?
+        </h1>
+      )}
 
       {/* FAQ section */}
-      <div className="w-full flex flex-col lg:flex-row justify-between mt-16 lg:space-x-36 lg:px-14">
+      <div
+        className={`w-full flex flex-col lg:flex-row justify-between lg:space-x-36 lg:px-14 ${
+          addTitle ? "mt-16" : "mt-0 lg:mt-2"
+        }`}
+      >
         {/* Business Question */}
         <div className="w-full lg:w-1/2 flex flex-col mb-[20px] lg:mb-0">
           {companyFaqData.map((faq: FAQ) => (

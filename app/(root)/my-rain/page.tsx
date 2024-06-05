@@ -18,12 +18,12 @@ const MyRainPage = () => {
 
       {/* FAQ Section */}
       <div className="mt-8 lg:mt-20">
-        <FAQComponent />
+        <FAQComponent addTitle={true} />
       </div>
 
       {/* Need Help Section */}
       <div className="mt-20">
-        <NeedHelpComponent />
+        <NeedHelpComponent isOnlySignUp={false} />
       </div>
     </div>
   );

@@ -5,12 +5,16 @@ import { IoIosCall } from "react-icons/io";
 
 import CustomButtonComponent from "../common/CustomButtonComponent";
 
-const NeedHelpComponent = () => {
+const NeedHelpComponent = ({ isOnlySignUp }: { isOnlySignUp: boolean }) => {
   const router = useRouter();
   return (
     <div className="flex flex-col">
       {/* Call Number Section */}
-      <div className="flex flex-col justify-center items-center pt-6 pb-9 bg-[#fbfbfb]">
+      <div
+        className={`flex flex-col justify-center items-center pt-6 bg-[#fbfbfb] ${
+          !isOnlySignUp ? "pb-9" : "pb-4"
+        }`}
+      >
         <p className="text-gray-400 font-medium">
           If you still need help, please give us a call.
         </p>
@@ -23,32 +27,46 @@ const NeedHelpComponent = () => {
             href="tel:+0648473363"
             className="text-3xl text-blue-600 hover:text-blue-800 ml-2"
           >
-            064 837 3363
+            064 847 3363
           </a>
         </div>
       </div>
 
       {/* Get Help Button Section */}
       <div className="flex flex-col justify-center items-center mt-3">
-        <p className="text-3xl text-blue-600 font-semibold">get started</p>
+        {!isOnlySignUp ? (
+          <>
+            <p className="text-3xl text-blue-600 font-semibold">get started</p>
 
-        <div className="w-64 flex flex-row justify-center items-center space-x-6 mt-6">
-          <CustomButtonComponent
-            text="sign in"
-            onClick={() => router.push("/sign-in")}
-            normal={true}
-            outline={false}
-            hover={true}
-          />
+            <div className="w-64 flex flex-row justify-center items-center space-x-6 mt-6">
+              <CustomButtonComponent
+                text="sign in"
+                onClick={() => router.push("/sign-in")}
+                normal={true}
+                outline={false}
+                hover={true}
+              />
 
-          <CustomButtonComponent
-            text="shop"
-            onClick={() => router.push("/")}
-            normal={true}
-            outline={false}
-            hover={true}
-          />
-        </div>
+              <CustomButtonComponent
+                text="shop"
+                onClick={() => router.push("/")}
+                normal={true}
+                outline={false}
+                hover={true}
+              />
+            </div>
+          </>
+        ) : (
+          <div className="w-64 flex flex-row justify-center items-center space-x-6 mt-3">
+            <CustomButtonComponent
+              text="sign in to myrain"
+              onClick={() => router.push("/sign-in")}
+              normal={true}
+              outline={false}
+              hover={false}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
