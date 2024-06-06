@@ -6,9 +6,10 @@ const CustomButtonComponent = ({
   outline,
   normal,
   hover,
+  type,
 }: CustomButtonProps) => {
   return (
-    <div
+    <button
       className={`flex w-full justify-center items-center rounded-full cursor-pointer ${
         outline
           ? "border font-[500] border-blue-600 bg-transparent text-blue-600 py-3 px-5 lg:px-10"
@@ -19,6 +20,7 @@ const CustomButtonComponent = ({
           : "bg-blue-600 py-3 px-6 lg:px-10"
       }`}
       onClick={onClick}
+      type={type}
     >
       <p
         className={` ${
@@ -31,7 +33,7 @@ const CustomButtonComponent = ({
       >
         {text}
       </p>
-    </div>
+    </button>
   );
 };
 

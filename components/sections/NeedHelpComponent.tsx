@@ -45,6 +45,7 @@ const NeedHelpComponent = ({ isOnlySignUp }: { isOnlySignUp: boolean }) => {
                 normal={true}
                 outline={false}
                 hover={true}
+                type="button"
               />
 
               <CustomButtonComponent
@@ -53,6 +54,7 @@ const NeedHelpComponent = ({ isOnlySignUp }: { isOnlySignUp: boolean }) => {
                 normal={true}
                 outline={false}
                 hover={true}
+                type="button"
               />
             </div>
           </>
@@ -64,6 +66,7 @@ const NeedHelpComponent = ({ isOnlySignUp }: { isOnlySignUp: boolean }) => {
               normal={true}
               outline={false}
               hover={false}
+              type="button"
             />
           </div>
         )}

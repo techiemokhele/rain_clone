@@ -57,6 +57,7 @@ const RainGoDesktopComponent = () => {
               onClick={() => router.push("/")}
               normal={true}
               outline={false}
+              type="button"
             />
           </div>
         </div>

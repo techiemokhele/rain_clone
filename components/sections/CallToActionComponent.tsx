@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import CustomButtonComponent from "./CustomButtonComponent";
+import CustomButtonComponent from "../common/CustomButtonComponent";
 
 const CallToActionComponent = () => {
   const router = useRouter();
@@ -26,6 +26,7 @@ const CallToActionComponent = () => {
               onClick={() => router.push("/")}
               outline={true}
               normal={false}
+              type="button"
             />
           </div>
           <div>
@@ -34,6 +35,7 @@ const CallToActionComponent = () => {
               onClick={() => router.push("/")}
               outline={false}
               normal={true}
+              type="button"
             />
           </div>
         </div>

@@ -1,4 +1,4 @@
-import CallToActionComponent from "@/components/common/CallToActionComponent";
+import CallToActionComponent from "@/components/sections/CallToActionComponent";
 import MobileSimCardComponent from "@/components/sections/MobileSimCardComponent";
 import RainGoDesktopComponent from "@/components/sections/RainGoDesktopComponent";
 import RouterOptionComponent from "@/components/sections/RouterOptionComponent";

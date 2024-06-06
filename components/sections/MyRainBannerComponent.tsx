@@ -41,6 +41,7 @@ const MyRainBannerComponent = () => {
               onClick={() => router.push("/sign-in")}
               normal={true}
               outline={false}
+              type="button"
             />
           </div>
         </div>
