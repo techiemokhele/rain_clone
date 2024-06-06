@@ -14,7 +14,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/techiemokhele/rain_clone.git
-cd react_portfolio
+cd rain_clone
 ```
 
 ## Installing
