@@ -1,4 +1,4 @@
-import CallToActionComponent from "@/components/common/CallToActionComponent";
+import CallToActionComponent from "@/components/sections/CallToActionComponent";
 import HomePageHeroComponent from "@/components/sections/HomePageHeroComponent";
 import SliderComponent from "@/components/sections/SliderComponent";
 import MobileSimCardComponent from "@/components/sections/MobileSimCardComponent";

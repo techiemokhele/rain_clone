@@ -1,9 +1,28 @@
+//auth props
+export interface EmailInputProps {
+    value: string;
+    onChange: (value: string) => void;
+    error?: string;
+}
+
+export interface PasswordInputProps {
+    value: string;
+    onChange: (value: string) => void;
+    error?: string;
+}
+
+export interface ForgotPasswordProps {
+    setShowForgotPassword: (show: boolean) => void;
+}
+
+//in-app props
 export interface CustomButtonProps {
     text: string;
-    onClick: () => void;
+    onClick?: () => void;
     outline?: boolean;
     normal?: boolean;
     hover?: boolean;
+    type: "button" | "submit"
 }
 
 export interface SimDealProps {

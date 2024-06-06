@@ -43,6 +43,7 @@ const SidebarComponent = ({ onClose }: { onClose: () => void }) => {
             onClick={() => handleNavigation("/")}
             outline={false}
             normal={false}
+            type="button"
           />
         </div>
       </div>
