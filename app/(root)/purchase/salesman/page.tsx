@@ -1,12 +1,13 @@
 import Image from "next/image";
 
 import ProductBenefitComponent from "@/components/sections/ProductBenefitComponent";
+import SalesmanFooterComponent from "@/components/sections/SalesmanFooterComponent";
 
 const SalesmanPage = () => {
   return (
-    <div className="container mx-auto flex flex-col h-auto w-full">
+    <div className="flex flex-col h-auto w-full mb-[18px] lg:mb-0">
       {/* Header Section */}
-      <div className="flex flex-col justify-center items-center mt-16 lg:mt-10">
+      <div className="container mx-auto flex flex-col justify-center items-center mt-16 lg:mt-10">
         <div className="flex flex-row justify-center items-center space-x-2">
           <p className="text-blue-600 text-[26px] lg:text-[46px]">
             welcome to{" "}
@@ -31,11 +32,14 @@ const SalesmanPage = () => {
       </div>
 
       {/* Product Section */}
-      <div className="px-4">
+      <div className="container mx-auto px-4">
         <ProductBenefitComponent />
       </div>
 
       {/* Footer Section */}
+      <div className="mt-4">
+        <SalesmanFooterComponent />
+      </div>
     </div>
   );
 };
