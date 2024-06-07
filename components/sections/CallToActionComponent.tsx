@@ -32,7 +32,7 @@ const CallToActionComponent = () => {
           <div>
             <CustomButtonComponent
               text="buy now"
-              onClick={() => router.push("/")}
+              onClick={() => router.push("/purchase/salesman")}
               outline={false}
               normal={true}
               type="button"
