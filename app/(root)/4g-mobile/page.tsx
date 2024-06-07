@@ -1,3 +1,4 @@
+import ActivateVoLTEComponent from "@/components/sections/ActivateVoLTEComponent";
 import Points4GComponent from "@/components/sections/Points4GComponent";
 
 const ConnectionMobile = () => {
@@ -10,6 +11,11 @@ const ConnectionMobile = () => {
       {/* Points Section */}
       <div className="mt-6">
         <Points4GComponent />
+      </div>
+
+      {/* Activate VoLTE Section */}
+      <div className="mt-3">
+        <ActivateVoLTEComponent />
       </div>
     </div>
   );
