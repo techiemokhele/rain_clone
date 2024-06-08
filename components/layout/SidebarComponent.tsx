@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { FaTimes } from "react-icons/fa";
 import CustomButtonComponent from "../common/CustomButtonComponent";
@@ -5,6 +6,7 @@ import Image from "next/image";
 
 const SidebarComponent = ({ onClose }: { onClose: () => void }) => {
   const router = useRouter();
+  const [isClosing, setIsClosing] = useState(false);
 
   const navItems = [
     { name: "shop", path: "/" },
@@ -17,15 +19,27 @@ const SidebarComponent = ({ onClose }: { onClose: () => void }) => {
 
   const handleNavigation = (path: string) => {
     router.push(path);
-    onClose();
+    handleClose();
+  };
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      onClose();
+      setIsClosing(false);
+    }, 2000);
   };
 
   return (
-    <div className="bg-blue-600 fixed rounded-e-md top-0 left-0 h-full w-full lg:w-[475px] z-50 transform transition-transform duration-300 shadow-lg">
+    <div
+      className={`bg-blue-600 fixed rounded-e-md top-0 left-0 h-full w-full lg:w-[475px] z-50 transform transition-transform duration-300 shadow-lg ${
+        isClosing ? "-translate-x-full" : "translate-x-0"
+      }`}
+    >
       {/* Close Section */}
       <div className="flex justify-end p-4">
-        <button onClick={onClose}>
-          <FaTimes className=" w-8 h-8 lg:w-6 lg:h-6 text-white" />
+        <button onClick={handleClose}>
+          <FaTimes className="w-8 h-8 lg:w-6 lg:h-6 text-white" />
         </button>
       </div>
 
