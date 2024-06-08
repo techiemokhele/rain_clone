@@ -52,7 +52,7 @@ const SupportOptionComponent = () => {
             href="tel:0648473363"
             className="text-blue-600 hover:text-blue-800"
           >
-            064 837 3363
+            064 847 3363
           </a>{" "}
           to speak with a helpful agent.
         </p>

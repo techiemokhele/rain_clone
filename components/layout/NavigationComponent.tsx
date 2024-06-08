@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-import { FaCartPlus } from "react-icons/fa";
+
 import SidebarComponent from "./SidebarComponent";
 
 const NavigationComponent = () => {
@@ -72,6 +72,7 @@ const NavigationComponent = () => {
                 home
               </span>
             </Link>
+
             <Link href="/work" passHref>
               <span
                 className={`ml-4 cursor-pointer text-[16px] font-[500] ${
@@ -111,6 +112,7 @@ const NavigationComponent = () => {
                 sign in
               </span>
             </Link>
+
             <span className="pipe"></span>
             <Link href="/cart" passHref>
               <p
@@ -119,7 +121,18 @@ const NavigationComponent = () => {
                 } hover:text-blue-600`}
               >
                 <span className="hidden md:inline">cart</span>
-                <FaCartPlus className="w-5 h-5 ml-0 lg:ml-2" />
+
+                <span className="absolute right-[19px] lg:right-[36px] top-[18px] flex justify-center items-center w-4 h-4 rounded-full bg-blue-600">
+                  <span className="text-[10px] text-white">0</span>
+                </span>
+
+                <Image
+                  src={"/icons/cart-icon.svg"}
+                  alt="cart-icon"
+                  width={1000}
+                  height={1000}
+                  className="w-[26px] h-[26px] lg:w-7 lg:h-7 ml-0 lg:ml-2"
+                />
               </p>
             </Link>
           </div>
