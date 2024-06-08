@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "logo": "/images/devices/icon-huwaie.svg",
+    "os": "Huawei",
+    "steps": [
+      "go to settings",
+      "mobile network",
+      "mobile data",
+      "enable VoLTE or 4G"
+    ]
+  },
+  {
+    "id": 2,
+    "logo": "/images/devices/icon-android.svg",
+    "os": "Android",
+    "steps": [
+      "go to settings",
+      "connections",
+      "mobile network",
+      "enable VoLTE or 4G"
+    ]
+  },
+  {
+    "id": 3,
+    "logo": "/images/devices/icon-apple.svg",
+    "os": "iOS",
+    "steps": [
+      "go to settings",
+      "mobile data",
+      "mobile data options",
+      "voice & data",
+      "enable VoLTE"
+    ]
+  }
+]
