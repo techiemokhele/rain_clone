@@ -3,7 +3,7 @@ import volteDeviceData from "../assets/volteDeviceData.json";
 
 const ActivateVoLTEComponent = () => {
   return (
-    <div className="flex flex-col">
+    <section className="flex flex-col">
       <div className="mb-3">
         <p className="text-blue-600 text-[22px] font-bold">
           how do I activate VoLTE?
@@ -59,7 +59,7 @@ const ActivateVoLTEComponent = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

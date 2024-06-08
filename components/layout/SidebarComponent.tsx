@@ -10,7 +10,7 @@ const SidebarComponent = ({ onClose }: { onClose: () => void }) => {
     { name: "shop", path: "/" },
     { name: "my rain", path: "/my-rain" },
     { name: "our network", path: "/our-network" },
-    { name: "4G mobile", path: "/4g-mobile" },
+    { name: "4G mobile", path: "/4Gmobile" },
     { name: "support", path: "/support" },
     { name: "legal", path: "/legal" },
   ];
