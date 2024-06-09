@@ -61,8 +61,8 @@ export interface SliderImageData {
 }
 
 export interface RouterOptionProps {
-    adOneImage: string;
-    adTwoImage: string;
+    adOneImage?: string;
+    adTwoImage?: string;
 }
 
 export interface MobileSimProps {

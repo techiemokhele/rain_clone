@@ -1,8 +1,11 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import CustomButtonComponent from "../common/CustomButtonComponent";
 
 const SalesmanFooterComponent = () => {
+  const router = useRouter();
+
   return (
     <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center pt-5 px-20 bg-[#f8f9fa] py-2">
       {/* Empty space for large devices */}
@@ -30,7 +33,7 @@ const SalesmanFooterComponent = () => {
         <div className=" w-80 pt-1 lg:pt-0 lg:w-48 mb-8 lg:mb-0">
           <CustomButtonComponent
             text="buy"
-            onClick={() => {}}
+            onClick={() => router.push("/purchase/purchase-wizard")}
             outline={false}
             hover={false}
             normal={true}

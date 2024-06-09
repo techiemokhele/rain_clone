@@ -48,11 +48,13 @@ const RouterOptionComponent = ({
   return (
     <section className="flex flex-col md:flex-row">
       {/* Router Selector Section */}
-      <div className="flex flex-col justify-center items-center md:w-2/3 px-4 pt-8 lg:pt-5 pb-[27px] mx-2 bg-gray-100 my-2 lg:my-0 rounded-3xl">
-        <p className="text-[22px] lg:text-[32px] text-gray-600">
-          the NEW <span className="font-bold">101 skins&trade;</span> collection
-          is here
-        </p>
+      <div className="flex flex-col justify-center items-center md:w-2/3 px-4 pt-8 lg:pt-5 pb-[27px] mx-2 my-2 lg:my-0 rounded-3xl">
+        {adOneImage && adTwoImage && (
+          <p className="text-[22px] lg:text-[32px] text-gray-600">
+            the NEW <span className="font-bold">101 skins&trade;</span>{" "}
+            collection is here
+          </p>
+        )}
 
         {/* Main Router Viewer */}
         <div className="my-5 flex justify-center items-center">
@@ -127,27 +129,29 @@ const RouterOptionComponent = ({
       </div>
 
       {/* Router Option Image Section */}
-      <div className="w-full md:w-1/3 px-2 flex flex-col space-y-3">
-        <div className="w-full h-[211px] lg:h-[250px]">
-          <Image
-            src={adOneImage}
-            alt="Image"
-            width={1000}
-            height={1000}
-            className="w-full h-full object-cover"
-          />
-        </div>
+      {adOneImage && adTwoImage && (
+        <div className="w-full md:w-1/3 px-2 flex flex-col space-y-3">
+          <div className="w-full h-[211px] lg:h-[250px]">
+            <Image
+              src={adOneImage!}
+              alt="Image"
+              width={1000}
+              height={1000}
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-        <div className="w-full h-[213px] lg:h-[250px]">
-          <Image
-            src={adTwoImage}
-            alt="Image"
-            width={1000}
-            height={1000}
-            className="w-full h-full object-cover"
-          />
+          <div className="w-full h-[213px] lg:h-[250px]">
+            <Image
+              src={adTwoImage!}
+              alt="Image"
+              width={1000}
+              height={1000}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 };
