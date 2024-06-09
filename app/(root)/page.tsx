@@ -15,7 +15,7 @@ const HomePage = () => {
       </div>
 
       {/* Slider Section */}
-      <div className="mt-28 lg:mt-32">
+      <div className="mt-28 lg:mt-32 -z-50">
         <SliderComponent isHomePage={true} />
       </div>
 

@@ -39,7 +39,7 @@ const NavigationComponent = () => {
   return (
     <>
       <nav
-        className={`fixed w-full top-0 z-50 flex justify-between items-center px-4 py-[16px] bg-white transition-shadow ${
+        className={`fixed w-full top-0 flex justify-between items-center px-4 py-[16px] bg-white transition-shadow ${
           isScrolled ? "shadow-md" : ""
         }`}
       >

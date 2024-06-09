@@ -16,6 +16,27 @@ export interface ForgotPasswordProps {
 }
 
 //in-app props
+export interface CustomInAppTextInputProps {
+    type: "text" | "email" | "tel";
+    placeholder: string;
+    value: string;
+    onChange: (value: string) => void;
+    required?: boolean;
+    maxLength?: number;
+}
+
+export interface CustomInAppTextAreaInputProps {
+    placeholder: string;
+    value: string;
+    onChange: (value: string) => void;
+}
+
+export interface formConfirmationProps {
+    name: string;
+    onClose: () => void;
+}
+
+
 export interface CustomButtonProps {
     text: string;
     onClick?: () => void;
