@@ -90,6 +90,7 @@ export interface RouterOptionProps {
     adTwoImage?: string;
     stepData?: RouterImageData[][];
     sellingRouter: boolean;
+    onSelect?: (routerData: any) => void;
 }
 
 export type NestedAnswer = {
