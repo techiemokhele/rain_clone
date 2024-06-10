@@ -51,7 +51,7 @@ const SkinSelectorPage = () => {
 
             <CustomButtonComponent
               text="next"
-              onClick={() => router.push("/skin-selector")}
+              onClick={() => router.push("/speed-up")}
               normal={true}
               hover={false}
               outline={false}
