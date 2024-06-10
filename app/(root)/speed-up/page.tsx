@@ -89,7 +89,7 @@ const SpeedUpRouterPage = () => {
 
                   <div className="hidden md:block">
                     {speed && s === speed ? (
-                      <p className="text-blue-600 text-[26px] text-center leading-tight mt-4">
+                      <p className="text-blue-600 text-[24px] text-center leading-tight mt-4">
                         {s === 60 ? (
                           <>
                             +R200 <br /> a month
@@ -106,7 +106,7 @@ const SpeedUpRouterPage = () => {
                         )}
                       </p>
                     ) : (
-                      <p className="mt-10 text-transparent">
+                      <p className="mt-12 text-transparent">
                         nothing to show here
                       </p>
                     )}
