@@ -60,11 +60,6 @@ export interface SliderImageData {
     image: string;
 }
 
-export interface RouterOptionProps {
-    adOneImage?: string;
-    adTwoImage?: string;
-}
-
 export interface MobileSimProps {
     isWork: boolean;
     startingText: string;
@@ -84,6 +79,17 @@ export interface RouterImageData {
     id: number;
     mainImage: string;
     thumbnailImage: string;
+    artImage?: string;
+    artAuthor?: string;
+    artDescription?: string;
+    artMoreInfo?: string;
+}
+
+export interface RouterOptionProps {
+    adOneImage?: string;
+    adTwoImage?: string;
+    stepData?: RouterImageData[][];
+    sellingRouter: boolean;
 }
 
 export type NestedAnswer = {

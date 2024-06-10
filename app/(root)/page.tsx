@@ -1,3 +1,5 @@
+"use client";
+
 import CallToActionComponent from "@/components/sections/CallToActionComponent";
 import HomePageHeroComponent from "@/components/sections/HomePageHeroComponent";
 import SliderComponent from "@/components/sections/SliderComponent";
@@ -6,7 +8,14 @@ import RainGoComponent from "@/components/sections/RainGoComponent";
 import RouterOptionComponent from "@/components/sections/RouterOptionComponent";
 import SimDealComponent from "@/components/sections/SimDealComponent";
 
+import {
+  artCollectionRouterData,
+  rainCollectionRouterData,
+} from "../../components/assets/routerOptionData";
+
 const HomePage = () => {
+  const stepData = [artCollectionRouterData, rainCollectionRouterData];
+
   return (
     <div className="container mx-auto flex flex-col h-auto w-full pb-24">
       {/* Hero Section */}
@@ -34,6 +43,8 @@ const HomePage = () => {
       {/* Router Option Section */}
       <div className="mt-[10px] -mb-1 lg:mb-5 lg:mt-[40px]">
         <RouterOptionComponent
+          stepData={stepData}
+          sellingRouter={false}
           adOneImage="/images/products/lifestyle1.png"
           adTwoImage="/images/products/lifestyle2.png"
         />
