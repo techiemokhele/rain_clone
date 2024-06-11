@@ -32,7 +32,7 @@ const HomePage = () => {
       <div className="my-[60px] lg:mt-[90px]">
         <SimDealComponent
           isWork={false}
-          logo={"/images/logo/rainOne-logo.svg"}
+          logo={"/images/logo/rainone-logo.svg"}
           productImage={"/images/products/rainOne-home-stone.png"}
           type="home"
           simCount={2}
@@ -45,8 +45,8 @@ const HomePage = () => {
         <RouterOptionComponent
           stepData={stepData}
           sellingRouter={false}
-          adOneImage="/images/products/lifestyle1.png"
-          adTwoImage="/images/products/lifestyle2.png"
+          adOneImage="/images/products/Lifestyle1.png"
+          adTwoImage="/images/products/Lifestyle2.png"
         />
       </div>
 
@@ -62,7 +62,7 @@ const HomePage = () => {
       </div>
 
       {/* Rain Go Section */}
-      <div className="mt-[10px] lg:mt-6">
+      <div className="mt-[10px] lg:mt-6 -z-50">
         <RainGoComponent />
       </div>
 

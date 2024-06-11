@@ -23,7 +23,7 @@ const OurNetworkPage = () => {
       </div>
 
       {/* Google Map Section */}
-      <div className="mt-8">
+      <div className="mt-8 -z-50">
         <GoogleMapComponent />
       </div>
 

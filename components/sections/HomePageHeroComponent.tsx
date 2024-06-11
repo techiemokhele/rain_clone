@@ -12,7 +12,7 @@ const HomePageHeroComponent = () => {
         {/* Mobile Top View */}
         <div className="sm:hidden flex flex-col items-center mb-2">
           <img
-            src="/images/logo/rainOne-logo.svg"
+            src="/images/logo/rainone-logo.svg"
             alt="Image"
             width={0}
             height={0}
@@ -39,7 +39,7 @@ const HomePageHeroComponent = () => {
       {/* Text column */}
       <div className="w-full sm:w-1/2 px-4 text-start">
         <img
-          src="/images/logo/rainOne-logo.svg"
+          src="/images/logo/rainone-logo.svg"
           alt="Image"
           width={200}
           height={200}
