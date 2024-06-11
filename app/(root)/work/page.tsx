@@ -28,6 +28,7 @@ const WorkPage = () => {
       {/* Router Option Section */}
       <div className="mt-[10px] -mb-1 lg:mb-5 lg:mt-[40px]">
         <RouterOptionComponent
+          sellingRouter={false}
           adOneImage="/images/products/lifestyle_01_Work.jpg"
           adTwoImage="/images/products/lifestyle_02_Work.jpg"
         />
