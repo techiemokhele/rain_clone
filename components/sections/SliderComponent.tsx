@@ -12,7 +12,7 @@ import {
 
 interface SliderComponentProps {
   isHomePage: boolean;
-  isWorkPage?: boolean; // Optional prop for work page
+  isWorkPage?: boolean;
 }
 
 const SliderComponent = ({
