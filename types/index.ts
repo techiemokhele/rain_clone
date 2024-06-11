@@ -89,7 +89,7 @@ export interface RouterOptionProps {
     adOneImage?: string;
     adTwoImage?: string;
     stepData?: RouterImageData[][];
-    sellingRouter: boolean;
+    sellingRouter?: boolean;
     onSelect?: (routerData: any) => void;
 }
 
