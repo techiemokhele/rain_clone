@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "",
+    "yourBenefit": "5 mobile phone lines",
+    "getBenefits": "2 gigs | 60 min | 100 sms"
+  },
+  {
+    "id": 2,
+    "title": "level 1",
+    "yourBenefit": "5 mobile phone lines",
+    "getBenefits": "3 gigs | 90 min | 100 sms"
+  },
+  {
+    "id": 3,
+    "title": "level 2",
+    "yourBenefit": "5 mobile phone lines",
+    "getBenefits": "4 gigs | 120 min | 100 sms"
+  },
+  {
+    "id": 4,
+    "title": "level 3",
+    "yourBenefit": "5 mobile phone lines",
+    "getBenefits": "5 gigs | 150 min | 100 sms"
+  },
+  {
+    "id": 5,
+    "title": "level 4",
+    "yourBenefit": "5 mobile phone lines",
+    "getBenefits": "6 gigs | 180 min | 100 sms"
+  },
+  {
+    "id": 6,
+    "title": "level 5",
+    "yourBenefit": "5 mobile phone lines",
+    "getBenefits": "7 gigs | 210 min | 100 sms"
+  }
+]

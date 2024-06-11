@@ -93,6 +93,13 @@ export interface RouterOptionProps {
     onSelect?: (routerData: any) => void;
 }
 
+export interface LevelUpRouterProps {
+    id: number,
+    title: string;
+    yourBenefit: string;
+    getBenefits: string;
+}
+
 export type NestedAnswer = {
     nested_question: string;
     nested_info?: string;

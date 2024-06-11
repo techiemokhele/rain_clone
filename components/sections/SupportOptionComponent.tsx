@@ -16,8 +16,10 @@ const SupportOptionComponent = () => {
           className="w-[100px] h-[100px] object-contain mb-6"
         />
         <p className="w-40 text-gray-400 text-[16px] text-center font-medium">
-          <a className="text-blue-600 underline">Sign in</a> to manage your
-          account.
+          <a href="/sign-in" className="text-blue-600 underline cursor-pointer">
+            Sign in
+          </a>{" "}
+          to manage your account.
         </p>
       </div>
 

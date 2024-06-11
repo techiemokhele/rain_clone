@@ -130,7 +130,7 @@ const SpeedUpRouterPage = () => {
 
               <CustomButtonComponent
                 text="next"
-                onClick={() => router.push("/")}
+                onClick={() => router.push("/level-up")}
                 normal={true}
                 hover={false}
                 outline={false}
