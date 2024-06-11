@@ -1,3 +1,5 @@
+"use client";
+
 import CallToActionComponent from "@/components/sections/CallToActionComponent";
 import MobileSimCardComponent from "@/components/sections/MobileSimCardComponent";
 import RainGoDesktopComponent from "@/components/sections/RainGoDesktopComponent";
@@ -5,7 +7,14 @@ import RouterOptionComponent from "@/components/sections/RouterOptionComponent";
 import SimDealComponent from "@/components/sections/SimDealComponent";
 import SliderComponent from "@/components/sections/SliderComponent";
 
+import {
+  artCollectionRouterData,
+  rainCollectionRouterData,
+} from "../../../components/assets/routerOptionData";
+
 const WorkPage = () => {
+  const stepData = [artCollectionRouterData, rainCollectionRouterData];
+
   return (
     <div className="container mx-auto flex flex-col h-auto w-full pb-24">
       {/* Slider Section */}
@@ -28,6 +37,7 @@ const WorkPage = () => {
       {/* Router Option Section */}
       <div className="mt-[10px] -mb-1 lg:mb-5 lg:mt-[40px]">
         <RouterOptionComponent
+          stepData={stepData}
           sellingRouter={false}
           adOneImage="/images/products/Lifestyle_01_Work.jpg"
           adTwoImage="/images/products/Lifestyle_02_Work.jpg"
